@@ -176,7 +176,7 @@ bool tud_usbtmc_msg_data_cb(void *data, size_t len, bool transfer_complete)
     drv_cmd         = true;
     char *ptr_value = get_value(data);
     dly_value      = (uint32_t)atoi(ptr_value);
-	dly_mod        = dly_value; //+ (dly_value * 0.14); // adjustment for large delays
+	dly_mod        = dly_value + (dly_value * 0.02031); // adjustment for large delays
 	PORT->Group[0].OUTSET.reg = PORT_PA10; // drive high value
     delay_us(dly_mod);
     PORT->Group[0].OUTCLR.reg = PORT_PA10; // drive low value
