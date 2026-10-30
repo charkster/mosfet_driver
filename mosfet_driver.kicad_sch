@@ -5,6 +5,146 @@
 	(uuid "55860bbe-0ba2-4481-939d-a5d74f3a9faa")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:Conn_01x01_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01_Pin"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x01_Pin_1_1"
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x02_Pin"
 			(pin_names
 				(offset 1.016)
@@ -1096,9 +1236,19 @@
 		)
 		(uuid "3850500f-feae-40f7-ab8f-b1205cc89091")
 	)
+	(text "PWR"
+		(exclude_from_sim no)
+		(at 146.304 84.074 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3ab98a8d-c421-4e35-a338-bfa8abf36e16")
+	)
 	(text "XIAO_5V_USB"
 		(exclude_from_sim no)
-		(at 132.588 79.756 0)
+		(at 150.368 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1108,7 +1258,7 @@
 	)
 	(text "XIAO_GND"
 		(exclude_from_sim no)
-		(at 130.81 131.318 0)
+		(at 130.048 132.334 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1143,10 +1293,22 @@
 		(uuid "25ecae6f-0838-4fd7-aeaf-d76da1e0fb9d")
 	)
 	(junction
+		(at 171.45 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "36a93410-09bc-4fb9-a860-288e483ab59e")
+	)
+	(junction
 		(at 175.26 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5ac7ac2f-1b1f-4179-90bc-fe2deb769544")
+	)
+	(junction
+		(at 135.89 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "71b204be-aab6-42f6-83ba-594cc116082a")
 	)
 	(junction
 		(at 135.89 83.82)
@@ -1167,10 +1329,10 @@
 		(uuid "a32c2a49-90b7-45fe-a71a-3ae6dd5ccda9")
 	)
 	(junction
-		(at 158.75 113.03)
+		(at 171.45 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a8369dac-7f6d-4819-b4f6-9a99b6c80274")
+		(uuid "adaedee0-e22f-4605-986e-4fd6c1f833ef")
 	)
 	(junction
 		(at 106.68 83.82)
@@ -1258,13 +1420,13 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 97.79) (xy 158.75 97.79)
+			(xy 135.89 119.38) (xy 135.89 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "58c75cd1-f53b-4292-aff3-a711a2010b19")
+		(uuid "5cba23d7-abe7-4c76-b2f5-30e09751a158")
 	)
 	(wire
 		(pts
@@ -1285,6 +1447,16 @@
 			(type default)
 		)
 		(uuid "6bf0b4b8-8bee-468a-9a5a-7a32b565259c")
+	)
+	(wire
+		(pts
+			(xy 158.75 97.79) (xy 175.26 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "700cd319-a750-4a8d-8d4a-ecc7ebd6121a")
 	)
 	(wire
 		(pts
@@ -1318,6 +1490,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 113.03) (xy 158.75 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84f64ff1-6271-4e87-9375-a73083efc97a")
+	)
+	(wire
+		(pts
 			(xy 111.76 91.44) (xy 115.57 91.44)
 		)
 		(stroke
@@ -1348,16 +1530,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 113.03) (xy 158.75 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be3f77b2-943f-4ed9-abbd-af39030871c0")
-	)
-	(wire
-		(pts
 			(xy 158.75 111.76) (xy 158.75 113.03)
 		)
 		(stroke
@@ -1368,7 +1540,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 113.03) (xy 158.75 113.03)
+			(xy 175.26 113.03) (xy 171.45 113.03)
 		)
 		(stroke
 			(width 0)
@@ -1388,7 +1560,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 114.3) (xy 135.89 116.84)
+			(xy 135.89 114.3) (xy 135.89 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1508,7 +1680,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF"
+		(property "Value" "0.1uF"
 			(at 128.778 89.662 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1562,6 +1734,84 @@
 			(project "mosfet_driver"
 				(path "/55860bbe-0ba2-4481-939d-a5d74f3a9faa"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 171.45 92.71 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3e3c9906-bb3b-498d-a2c3-b0d5d9a4a11d")
+		(property "Reference" "J5"
+			(at 167.132 92.964 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01_Pin"
+			(at 165.354 89.916 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+			(at 171.45 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 171.45 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2bb10650-0597-46c7-a983-95033c77d0c5")
+		)
+		(instances
+			(project "mosfet_driver"
+				(path "/55860bbe-0ba2-4481-939d-a5d74f3a9faa"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -1726,6 +1976,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 171.45 118.11 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "646af258-6785-4ef9-afd7-d1f60345cbd4")
+		(property "Reference" "J6"
+			(at 169.926 118.11 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01_Pin"
+			(at 177.546 120.904 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+			(at 171.45 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 171.45 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "96d2b93c-6448-43ab-9b82-3e5b6f9f8b13")
+		)
+		(instances
+			(project "mosfet_driver"
+				(path "/55860bbe-0ba2-4481-939d-a5d74f3a9faa"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 175.26 97.79 0)
 		(unit 1)
@@ -1884,8 +2212,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 158.75 115.57 0)
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 140.97 119.38 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1893,31 +2221,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9cecb757-f2e5-42d2-8fab-42abd9dcc287")
-		(property "Reference" "#PWR03"
-			(at 158.75 121.92 0)
-			(hide yes)
+		(uuid "97284e03-9ce5-4993-b341-d178a875e643")
+		(property "Reference" "J7"
+			(at 140.97 117.348 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 158.75 120.65 0)
+		(property "Value" "Conn_01x01_Pin"
+			(at 152.908 121.412 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 158.75 115.57 0)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+			(at 140.97 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1928,7 +2256,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 158.75 115.57 0)
+			(at 140.97 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1938,8 +2266,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 158.75 115.57 0)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 140.97 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1950,12 +2278,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "eea304d9-a654-4dcd-9e4d-fc53e5dc1826")
+			(uuid "7deb1e84-87f1-4299-a8de-d9e0e11a7238")
 		)
 		(instances
 			(project "mosfet_driver"
 				(path "/55860bbe-0ba2-4481-939d-a5d74f3a9faa"
-					(reference "#PWR03")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -2044,7 +2372,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 135.89 116.84 0)
+		(at 135.89 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2055,7 +2383,7 @@
 		(fields_autoplaced yes)
 		(uuid "a0b941bc-25a3-4c32-a5c1-9d6b6d21ee2b")
 		(property "Reference" "#PWR02"
-			(at 135.89 123.19 0)
+			(at 135.89 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2066,7 +2394,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 135.89 121.92 0)
+			(at 135.89 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2076,7 +2404,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 116.84 0)
+			(at 135.89 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2087,7 +2415,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 116.84 0)
+			(at 135.89 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2098,7 +2426,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 135.89 116.84 0)
+			(at 135.89 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
